@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		13BC017926A31CB800660205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017726A31CB800660205 /* Main.storyboard */; };
 		13BC017B26A31CB900660205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017A26A31CB900660205 /* Assets.xcassets */; };
 		13BC017E26A31CB900660205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017C26A31CB900660205 /* LaunchScreen.storyboard */; };
+		13BC018826A321B300660205 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018726A321B300660205 /* AuthorizationViewController.swift */; };
+		13BC018A26A32ED500660205 /* SessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018926A32ED500660205 /* SessionApp.swift */; };
+		13BC018C26A544D200660205 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018B26A544D200660205 /* FriendViewController.swift */; };
+		9EBD215CA02A86280F9A6BA4 /* Pods_CS_GB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B13A5D72A8A75884ECCC84 /* Pods_CS_GB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		13BC017A26A31CB900660205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BC017D26A31CB900660205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BC017F26A31CB900660205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BC018726A321B300660205 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		13BC018926A32ED500660205 /* SessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionApp.swift; sourceTree = "<group>"; };
+		13BC018B26A544D200660205 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		17B13A5D72A8A75884ECCC84 /* Pods_CS_GB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_GB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		403C7147FEBF2D8A0B279D76 /* Pods-CS_GB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS_GB.debug.xcconfig"; path = "Target Support Files/Pods-CS_GB/Pods-CS_GB.debug.xcconfig"; sourceTree = "<group>"; };
+		C15C000DE3239C431EA34746 /* Pods-CS_GB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS_GB.release.xcconfig"; path = "Target Support Files/Pods-CS_GB/Pods-CS_GB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBD215CA02A86280F9A6BA4 /* Pods_CS_GB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				13BC017026A31CB800660205 /* CS_GB */,
 				13BC016F26A31CB800660205 /* Products */,
+				EEEE022CBFC5988618CA63CE /* Pods */,
+				E49DF39A355325EC98C13C17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +92,28 @@
 		13BC018626A31D0E00660205 /* HomeWork2 */ = {
 			isa = PBXGroup;
 			children = (
+				13BC018726A321B300660205 /* AuthorizationViewController.swift */,
+				13BC018926A32ED500660205 /* SessionApp.swift */,
+				13BC018B26A544D200660205 /* FriendViewController.swift */,
 			);
 			path = HomeWork2;
+			sourceTree = "<group>";
+		};
+		E49DF39A355325EC98C13C17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B13A5D72A8A75884ECCC84 /* Pods_CS_GB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEEE022CBFC5988618CA63CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				403C7147FEBF2D8A0B279D76 /* Pods-CS_GB.debug.xcconfig */,
+				C15C000DE3239C431EA34746 /* Pods-CS_GB.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13BC018226A31CB900660205 /* Build configuration list for PBXNativeTarget "CS_GB" */;
 			buildPhases = (
+				D0F4BD518E6A981305F03703 /* [CP] Check Pods Manifest.lock */,
 				13BC016A26A31CB800660205 /* Sources */,
 				13BC016B26A31CB800660205 /* Frameworks */,
 				13BC016C26A31CB800660205 /* Resources */,
+				063CBB97AD0DE3A9631DF5B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,12 +183,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		063CBB97AD0DE3A9631DF5B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CS_GB/Pods-CS_GB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CS_GB/Pods-CS_GB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CS_GB/Pods-CS_GB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F4BD518E6A981305F03703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CS_GB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13BC016A26A31CB800660205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BC018C26A544D200660205 /* FriendViewController.swift in Sources */,
+				13BC018826A321B300660205 /* AuthorizationViewController.swift in Sources */,
 				13BC017626A31CB800660205 /* ViewController.swift in Sources */,
+				13BC018A26A32ED500660205 /* SessionApp.swift in Sources */,
 				13BC017226A31CB800660205 /* AppDelegate.swift in Sources */,
 				13BC017426A31CB800660205 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,6 +379,7 @@
 		};
 		13BC018326A31CB900660205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403C7147FEBF2D8A0B279D76 /* Pods-CS_GB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +399,7 @@
 		};
 		13BC018426A31CB900660205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15C000DE3239C431EA34746 /* Pods-CS_GB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
