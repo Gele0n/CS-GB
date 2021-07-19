@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		13BC017926A31CB800660205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017726A31CB800660205 /* Main.storyboard */; };
 		13BC017B26A31CB900660205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017A26A31CB900660205 /* Assets.xcassets */; };
 		13BC017E26A31CB900660205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC017C26A31CB900660205 /* LaunchScreen.storyboard */; };
+		13BC018826A321B300660205 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018726A321B300660205 /* AuthorizationViewController.swift */; };
+		13BC018A26A32ED500660205 /* SessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018926A32ED500660205 /* SessionApp.swift */; };
+		13BC018C26A544D200660205 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC018B26A544D200660205 /* FriendViewController.swift */; };
 		9EBD215CA02A86280F9A6BA4 /* Pods_CS_GB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B13A5D72A8A75884ECCC84 /* Pods_CS_GB.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		13BC017A26A31CB900660205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BC017D26A31CB900660205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BC017F26A31CB900660205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BC018726A321B300660205 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		13BC018926A32ED500660205 /* SessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionApp.swift; sourceTree = "<group>"; };
+		13BC018B26A544D200660205 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		17B13A5D72A8A75884ECCC84 /* Pods_CS_GB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_GB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		403C7147FEBF2D8A0B279D76 /* Pods-CS_GB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS_GB.debug.xcconfig"; path = "Target Support Files/Pods-CS_GB/Pods-CS_GB.debug.xcconfig"; sourceTree = "<group>"; };
 		C15C000DE3239C431EA34746 /* Pods-CS_GB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS_GB.release.xcconfig"; path = "Target Support Files/Pods-CS_GB/Pods-CS_GB.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 		13BC018626A31D0E00660205 /* HomeWork2 */ = {
 			isa = PBXGroup;
 			children = (
+				13BC018726A321B300660205 /* AuthorizationViewController.swift */,
+				13BC018926A32ED500660205 /* SessionApp.swift */,
+				13BC018B26A544D200660205 /* FriendViewController.swift */,
 			);
 			path = HomeWork2;
 			sourceTree = "<group>";
@@ -104,7 +113,6 @@
 				403C7147FEBF2D8A0B279D76 /* Pods-CS_GB.debug.xcconfig */,
 				C15C000DE3239C431EA34746 /* Pods-CS_GB.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BC018C26A544D200660205 /* FriendViewController.swift in Sources */,
+				13BC018826A321B300660205 /* AuthorizationViewController.swift in Sources */,
 				13BC017626A31CB800660205 /* ViewController.swift in Sources */,
+				13BC018A26A32ED500660205 /* SessionApp.swift in Sources */,
 				13BC017226A31CB800660205 /* AppDelegate.swift in Sources */,
 				13BC017426A31CB800660205 /* SceneDelegate.swift in Sources */,
 			);
